@@ -6,7 +6,7 @@ In late 2019, [@Quackster](https://github.com/Quackster) asked me to reverse-eng
 This is a updated version of the original version I wrote.
 
 ## Building & usage
-**Prerequisities:** .NET 6 SDK
+**Prerequisities:** .NET 7 SDK
 ```sh
 git clone https://github.com/PaulusParssinen/HPhotoRenderer.git
 cd ./HPhotoRenderer/HPhotoRenderer

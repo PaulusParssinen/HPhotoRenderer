@@ -6,12 +6,12 @@ if (args is not [string filePath])
     return;
 }
 
-Rgba32[] grayscalePalette = ReadPalette("grayscale.pal");
+Rgba32[] grayscalePalette = ReadPalette("./Palettes/grayscale.pal");
 
 // TODO: Eventually use Shockky for all of this.
 Span<byte> musBytes = File.ReadAllBytes(filePath);
 
-// BitmapCastProperties
+// Bitmap Cast Member Properties
 ushort stride = BinaryPrimitives.ReadUInt16BigEndian(musBytes[28..]);
 
 ushort top = BinaryPrimitives.ReadUInt16BigEndian(musBytes[30..]);
@@ -43,7 +43,7 @@ if (paletteRef.MemberNum - 1 != -3)
     return;
 }
 
-// Now comes the BitmapData (BITD)
+// Now comes the Bitmap Data (BITD)
 int width = stride;
 int height = bottom - top;
 
