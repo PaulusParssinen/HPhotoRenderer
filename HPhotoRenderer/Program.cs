@@ -1,4 +1,7 @@
-﻿using System.Buffers.Binary;
+﻿using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+
+using System.Buffers.Binary;
 
 if (args is not [string filePath])
 {
